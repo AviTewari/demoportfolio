@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Avi Tewari</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#publication">Publication</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Avi Tewari</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#publication" onclick="toggleMenu()">Publication</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="https://github.com/AviTewari/My-Portfolio/blob/main/assets/about_pic.png?raw=true" alt="Avi Tewari profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Avi Tewari</h1>
+        <p class="section__text__p2">Data Scientist/ Analyst/ Machine Learning Engineer</p>
+        <div class="section__text__p3">
+          <h3>About Me</h3>
+          <ul>
+              <li>Accomplished Data Scientist/Analyst with over 3 years of expertise in insightful data driven solutions.</li>
+              <li>Currently spearheading the data analyst/machine learning team at ENGAGEathon, excelling in task delegation, extracting pivotal data from web applications, and conducting thorough analysis.</li>
+              <li>Proven track record in completing high-impact projects and publishing influential research papers.</li>
+          </ul>
+      </div>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/avi-tewari/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/AviTewari'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Get To Know More</p>
+      <h1 class="title">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;About Me<br><br><br><br></h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="https://github.com/AviTewari/My-Portfolio/blob/main/assets/streetview.png?raw=true"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h3>Education</h3>
+              <ul>
+                <li><span class="degree">Masters in Data Science @ <b>University of California, Irvine</b></span>
+                  <span class="time-period">2023 - Present</span></li>
+                <li><span class="degree">B.Tech Computer Science and Engineering @ <b>SRM University, India</b></span>
+                  <span class="time-period">2019 - 2023</span></li>
+                
+              </ul>
+            </div>
+          </div>
+          <div class="text-container">
+            <h3>Work Experience</h3>
+            <ul>
+              <li>
+                <span class="job-title"><b>Machine leaarning Researcher @ UCI School Of Education | Irvine</b></span>
+                <span class="time-period"><i>(Jun. 2024 - Present)</i></span>
+                <ul>
+                  <li>Enhanced data preprocessing (tokenization, lemmatization, stop-word removal) and feature extraction (TF-IDF, word embeddings), improving classification accuracy of collaborative and cognitive behaviors in classroom interactions by 15%.</li>
+                  <li>Developed and fine-tuned Large Language Models (LLMs) including BERT and GPT using the Hugging Face API for classifying student-teacher interactions, achieving an accuracy of 73% in identifying collaborative and cognitive behaviors.</li>
+                  <li>Architected APIs for real-time model deployment of BERT and GPT models into monitoring systems, enabling automated analysis of classroom interactions.</li>
+                </ul>
+              </li>
+              <li>
+                <span class="job-title"><b>Data Science Intern @ Expand AI | India</b></span>
+                <span class="time-period"><i>(Nov. 2021 - Feb. 2022)</i></span>
+                <ul>
+                  <li>Processed and analyzed a dataset of 32,000 images using OpenCV and Scikit-learn to enhance image quality and standardize resolution, ensuring high quality inputs for Deep Learning models.</li>
+                  <li>Constructed a Convolutional Neural Network (CNN) using TensorFlow, improving data labeling accuracy by 21% by optimizing   hyper-parameters such as learning rate, batch size, and dropout rate.</li>
+                  <li>Established CI/CD pipelines using Jenkins to streamline the deployment process for the ML model, reducing deployment time by 30%.</li>
+                </ul>
+              </li>
+              <li>
+                <span class="job-title"><b>Data Science Intern @ LTIMindtree | India</b></span>
+                <span class="time-period"><i>(Aug. 2021 - Sept. 2021)</i></span>
+                <ul>
+                  <li>Directed data collection by web scraping images from diverse online sources to develop an Image Analysis System on Microsoft Azure using Custom Vision, achieving a 40% reduction in verification time for adherence to organizational dress code policies.</li>
+                  <li>Implemented ETL workflow for data extraction, deduplication, and database loading on a dataset of 5000 customer complaints, and executed exploratory data analysis (EDA) using text mining (Bag of Words and Tokenization) to derive insights.</li>
+                  <li>Formulated a Named Entity Recognition (NER) system using NLTK and spaCy to streamline complaint classification, facilitating routing to the appropriate department and reducing response time for handling customer feedback by 30%.</li>
+                  <li>Leveraged GitHub Actions to create a CI/CD workflow for automating the testing and deployment of the NER system.</li>
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Programming Languages</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>R </h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PySpark</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Big Dataframeworks</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Spark</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>AWS(S3,EMR)</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Kafka</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Hadoop</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Data Science and Analysis</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Data Mining</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Deep Learning</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Web Mining</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Stats Analysis</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Softwares</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MS Excel</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tableau</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>RStudio</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Power BI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#publication'"
+      />
+    </section>
+    <section id="publication">
+      <p class="section__text__p1"><br><br><br><br><br><br><br><br><br><br><br>Explore My</p>
+      <h1 class="title">Publications</h1>
+      <div class="publication-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Research Papers</h2>
+            <div class="article-container">
+              <article class="publication">
+                <div>
+                  <h3>Engagement in Video Graphic Online Learning Using the Emotional Dimensions in the Learning Context
+                    </h3>
+                    <p> <a href="https://ieeexplore.ieee.org/document/10080769" target="_blank">B. Baranidharan, H. Bhandari, A. Tewari, I. Sachadeva and Abhinav, "Engagement in Video Graphic Online Learning Using the Emotional Dimensions in the Learning Context," 2023 International Conference for Advancement in Technology (ICONAT), Goa, India, 2023,</a></p>
+                </div>
+              </article>                         
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Algorithm for stock market analysis</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/01ritvik/Stock-trading-algorithm'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Untitled.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">PySpark FAISS Article Finder</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/01ritvik/Recommendation-system-using-pyspark'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/p4.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Integrating LangChain with GPT</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/01ritvik/Integrating-LangChain-with-OpenAI-s-GPT-Model-in-Google-Colab'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/p3.png"
+                alt="Project 4"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">TSP using ACO & Cheapest Link</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/01ritvik/TSP-evolved'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/p5.png" 
+              alt="Project " 
+              class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Healthcare Analysis</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/01ritvik/Health-care-analysis'">
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">gritvik8@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/ritvik-gupta-81852618b/">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/download.png"
+            alt="Phone icon"
+            class="icon contact-icon"
+          />
+          <p><a>+1 (617) 938-7292</a></p>
+        </div>
+        
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#desktop-nav'"
+      />
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#publication">Publication</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer> 
+    <script src="script.js"></script>
+  </body>
+</html>
