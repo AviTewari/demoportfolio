@@ -416,89 +416,101 @@ section {
   text-decoration: none;
 }
 
+/* CERTIFICATIONS SECTION */
+
+#certifications {
+  position: relative;
+  margin-top: 100px;
+}
+
+.certification {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.certification h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.certification img {
+  max-width: 200px; /* Adjust the size as needed */
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
 /* EXPERIENCE SECTION */
 
 #experience {
   position: relative;
+  margin-top: 100px;
 }
 
-.experience-sub-title {
-  color: rgb(85, 85, 85);
-  font-weight: 600;
-  font-size: 1.75rem;
-  margin-bottom: 0.5rem;
+.experience-containers {
+  gap: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .experience-details-container {
-  display: flex;
-  justify-content: left;
+  justify-content: center;
   flex-direction: column;
-  max-width: 1200px; /* Limit the width of the content */
-  margin: 0 auto; /* Center the content horizontally */
-  padding: 0 20px;
-  color: darkgreen; /* Add some padding to the sides */
 }
 
-.article-container {
+.experience-containers,
+.experience-details-container {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px; /* Add some space between articles */
-  text-align: left;
 }
 
-.details-container {
-  flex: 1; /* Each container takes up equal space */
-  margin-bottom: 30px; /* Add space between containers */
+.experience-pic {
+  border-radius: 2rem;
+  height: 450px;
 }
 
-.experience-sub-title {
-  font-size: 1.5rem; /* Larger font size for sub-titles */
-  margin-bottom: 10px; /* Add some space below the sub-title */
+.experience-arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
 }
 
-.article-container {
-  display: flex;
-  text-align: left;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 2.5rem;
-  justify-content: space-around;
-  align-items: flex-start;
-}
-
-.article {
-  display: flex;
-  width: 10rem;
-  justify-content: space-around;
-  gap: 0.5rem;
+.experience-details-container {
+  padding: 0.5rem;
   flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+.experience-details-container ul {
+  list-style-type: disc; /* Adds bullet points */
+  padding-left: 1.5rem; /* Adds padding to align with the text */
+  text-align: left; /* Aligns the list items to the left */
+  margin: 0; /* Removes any default margin */
 }
 
-article .icon {
-  cursor: default;
+.experience-details-container ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.2rem; /* Adds some space between the list items */
+}
+.experience-container {
+  gap: 4rem;
+  height: 80%;
 }
 
-.article div {
-  text-align: left; 
-  overflow-wrap: break-word; 
-}
-.icon {
-  width: 30px; 
-  height: 30px; /* Set a fixed height for icons */
-  margin-right: 10px; /* Add some space to the right of the icon */
+.experience-pic {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
 }
 
-@media (max-width: 768px) {
-  .about-containers {
-    flex-direction: column; /* Stack containers vertically on smaller screens */
-  }
-
-  .details-container {
-    margin-bottom: 20px; 
-  }
-}
-
-.text-container {
+.experience-text-container {
   padding: 0.5rem;
   flex: 1;
   background: white;
@@ -508,98 +520,13 @@ article .icon {
   text-align: center;
 }
 
-
-/* PROJECTS SECTION */
-
-#projects {
-  position: relative;
+.experience-text-container ul {
+  list-style-type: disc; /* Adds bullet points */
+  padding-left: 1.5rem; /* Adds padding to align with the text */
+  text-align: left; /* Aligns the list items to the left */
+  margin: 0; /* Removes any default margin */
 }
 
-.color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
-}
-
-.project-img {
-  border-radius: 2rem;
-  width: 90%;
-  height: 90%;
-}
-
-.project-title {
-  margin: 1rem;
-  color: black;
-}
-
-.project-btn {
-  color: black;
-  border-color: rgb(163, 163, 163);
-}
-.details-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-}
-.project-img {
-  width: 100%; /* Ensure the image takes full width */
-  height: auto; /* Maintain aspect ratio */
-}
-
-.details-container:nth-child(5) {
-  grid-column: span 2; /* Make the fifth project span two columns */
-}
-/* CONTACT */
-
-#contact {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: 70vh;
-  position: relative;
-}
-
-.contact-info-upper-container {
-  display: flex;
-  justify-content: center;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  background: (250, 250, 250);
-  margin: 2rem auto;
-  padding: 0.5rem;
-}
-
-.contact-info-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  margin: 1rem;
-}
-
-.contact-info-container p {
-  font-size: larger;
-}
-
-.contact-icon {
-  cursor: default;
-}
-
-.email-icon {
-  height: 2.5rem;
-}
-
-/* FOOTER SECTION */
-
-footer {
-  height: 26vh;
-  margin: 0 1rem;
-}
-
-footer p {
-  text-align: center;
+.experience-text-container ul li {
+  margin-bottom: 1rem; /* Adds some space between the list items */
 }
